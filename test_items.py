@@ -7,6 +7,6 @@ def test_basket_button(browser):
         browser.get(link)
         time.sleep(30)
         button = browser.find_elements_by_css_selector(".btn-add-to-basket")
-        assert button is not []
+        assert button != []
     finally:
         browser.quit()
